@@ -1,0 +1,185 @@
+{
+    "questions":[
+        {
+        "questionText":"Unlike D.C. generator kW rating, alternators are rated in ?",
+        "option":[
+            {
+                "text":"MW"
+            },
+            {
+                "text":"kVAR"
+            },
+            {
+                "text":"kWh"
+            },
+            {
+                "text":"kVA",
+                "correct":true
+            }
+    ],
+    "explanation":""
+    },
+    {
+        "questionText":"When the speed of an alternator increases ?",
+        "option":[
+            {
+                "text":"the frequency decrease",
+                "correct":true
+            },
+            {
+                "text":"the frequency increases"
+            },
+            {
+                "text":"the frequency remains same"
+            },
+            {
+                "text":"the frequency changes"
+            }
+        ]
+    },
+    {
+        "questionText":"When two alternators are running in parallel, their kVAR load share are changed by changing their ?",
+        "option":[
+            {
+                "text":"driving torque, driving torque respectively "
+            },
+            {
+                "text":"driving torque, excitation respectively "
+            },
+            {
+                "text":"excitation, driving torque respectively",
+                "correct":true
+            },
+            {
+                "text":"excitation and excitation"
+            }
+        ]
+    },
+    {
+        "questionText":"When the speed of an alternator increases ?",
+        "option":[
+            {
+                "text":"the frequency decrease",
+                "correct":true
+            },
+            {
+                "text":"the frequency increases"
+            },
+            {
+                "text":"the frequency remains same"
+            },
+            {
+                "text":"the frequency changes"
+            }
+        ]
+    },
+    {
+        "questionText":"When the speed of an alternator increases ?",
+        "option":[
+            {
+                "text":"the frequency decrease",
+                "correct":true
+            },
+            {
+                "text":"the frequency increases"
+            },
+            {
+                "text":"the frequency remains same"
+            },
+            {
+                "text":"the frequency changes"
+            }
+        ]
+    },
+    {
+        "questionText":"When the speed of an alternator increases ?",
+        "option":[
+            {
+                "text":"the frequency decrease",
+                "correct":true
+            },
+            {
+                "text":"the frequency increases"
+            },
+            {
+                "text":"the frequency remains same"
+            },
+            {
+                "text":"the frequency changes"
+            }
+        ]
+    },
+    {
+        "questionText":"When the speed of an alternator increases ?",
+        "option":[
+            {
+                "text":"the frequency decrease",
+                "correct":true
+            },
+            {
+                "text":"the frequency increases"
+            },
+            {
+                "text":"the frequency remains same"
+            },
+            {
+                "text":"the frequency changes"
+            }
+        ]
+    },
+    {
+        "questionText":"When the speed of an alternator increases ?",
+        "option":[
+            {
+                "text":"the frequency decrease",
+                "correct":true
+            },
+            {
+                "text":"the frequency increases"
+            },
+            {
+                "text":"the frequency remains same"
+            },
+            {
+                "text":"the frequency changes"
+            }
+        ]
+    },
+    {
+        "questionText":"When the speed of an alternator increases ?",
+        "option":[
+            {
+                "text":"the frequency decrease",
+                "correct":true
+            },
+            {
+                "text":"the frequency increases"
+            },
+            {
+                "text":"the frequency remains same"
+            },
+            {
+                "text":"the frequency changes"
+            }
+        ]
+    },
+    {
+        "questionText":"When the speed of an alternator increases ?",
+        "option":[
+            {
+                "text":"the frequency decrease",
+                "correct":true
+            },
+            {
+                "text":"the frequency increases"
+            },
+            {
+                "text":"the frequency remains same"
+            },
+            {
+                "text":"the frequency changes"
+            }
+        ]
+    }
+]
+}

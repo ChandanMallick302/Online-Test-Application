@@ -1,0 +1,18 @@
+<div class="container bg-light py-5">
+  <h1 class="display-5 fw-bold text-center" style="font-family: 'Times New Roman', Times, serif;">
+    Welcome to O-T-A
+  </h1>
+  <p class="col-md-8 fs-4">This Quiz Will Contain total 9 Question. Each Question holds 10 point.</p>
+  <h4>Rules:</h4>
+  <ol>
+    <li>Correct question gives 10 points</li>
+    <li>Incorrect question gives you -10 points</li>
+    <li>You will have 60 sec to answer each question</li>
+    <li>Refreshing the page will reset the Test</li>
+  </ol>
+  <h1 style="font-family: cursive; text-align: center;">All the best!!</h1>
+    <div class="name col-md-4 my-3">
+      <input #name type="text" (mouseenter)="startQuiz()" class="form-control" placeholder="Enter Your Name Here">
+    </div>
+    <button class="btn btn-primary btn-lg" routerLink="/question" (click)="startQuiz()">Start Test</button>
+</div>

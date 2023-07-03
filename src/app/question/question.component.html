@@ -1,0 +1,54 @@
+<div class="container mt-2 bg-light">
+  <div class="quiz-header text-center">
+    <div style="font-family: cursive;">O-T-A</div>
+    <span style="font-style: italic;">Welcome {{name}}</span>
+  </div>
+
+  <ng-container *ngIf="!isQuizCompleted">
+    <div class="d-flex justify-content-around py-3">
+      <div class="score">
+        <h5>{{points}} points</h5>
+      </div>
+      <div class="question-remain">
+        <span style="font-style: italic;">Question {{currentQuestion+1}} of {{questionList.length}}</span>
+      </div>
+      <div class="timer">
+        <h5>{{counter}} sec ⏱️</h5> 
+      </div>
+    </div>
+    <div class="progress mb-3" style="height: 50px;">
+      <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar"
+        [ngStyle]="{'width':progress+'%'}" style="height: 50px;  " aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+    </div>
+  
+    <div class="question">
+      <div class="card">
+          <h3>{{questionList[currentQuestion]?.questionText}}</h3>
+      </div>
+    </div>
+    <div class="options"> 
+      <ol #option1 *ngFor="let options of questionList[currentQuestion]?.option">
+          <li >
+            <div appChangeBg [isCorrect]="options.correct" class="card" (click)="answer(currentQuestion+1,options)">{{options.text}}</div>
+          </li>
+      </ol>
+    </div>
+    <div class="d-flex justify-content-between">
+      <button class="btn" (click)="previousQuestion()" [disabled]="currentQuestion===0"><i class="fa-sharp text-primary fa-solid fa-backward fa-3x" ></i></button>
+      <button class="btn" (click)="resetQuiz()"><i class="fa-sharp text-primary fa-solid fa-refresh fa-3x"></i></button>
+      <button class="btn" (click)="nextQuestion()" [disabled]="currentQuestion===questionList.length-1"><i class="fa-sharp text-primary fa-solid fa-forward fa-3x"></i></button>
+    </div>
+  </ng-container>
+  <ng-container *ngIf="isQuizCompleted">
+    <div class="row text-center">
+      <div class="result text-center col-md-12 col-sm-12 final-test">
+        <h3>Congratulation!! <br>You have sucessfully completed the test. <br> Here is your result:</h3>
+        <p>Total Question : {{questionList.length}}</p>
+        <p>Total Question Attempted : {{correctAnswer+inCorrectAnswer}}</p>
+        <p>Total Correct Answered : {{correctAnswer}}</p>
+        <p>Total Wrong Answered : {{inCorrectAnswer}}</p>
+        <p>Your Score : {{points}} Points</p>
+      </div>
+    </div>
+  </ng-container>
+</div>

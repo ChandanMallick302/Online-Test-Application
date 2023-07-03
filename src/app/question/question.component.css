@@ -1,0 +1,27 @@
+.card {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+li {
+  list-style: none;
+  margin: 10px 0;
+}
+
+li .card:hover {
+  border: 1px solid blue;
+  cursor: pointer;
+}
+
+ol {
+  padding: 0;
+}
+
+.final-test {
+  background-image: url('https://img1.picmix.com/output/stamp/normal/0/4/1/9/469140_1fccc.gif');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: fit-content;
+
+}
